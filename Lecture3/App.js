@@ -30,11 +30,13 @@ const Header2 = (props) => {
 const Header = () => {
   return (
     <div>
-      <Header2 text="Header2" />{" "}
       {/* Component composition - Component inside component */}
+      <Header2 text="Header2" />{" "}
       <h1 style={{ color: "blue" }}>Header1</h1>
       {subHeader}
       {footer}
+      {/* Another way of calling functional components - At the end they are methods*/}
+      {Header2()}
     </div>
   );
 };
